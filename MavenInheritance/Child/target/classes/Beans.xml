@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+  <bean name="CustomerBean" class="com.pack.JavaCollection">
+
+       
+   
+  
+   
+   <property name="maps">
+   <map>
+   <entry key="600066" value="tnagar"/>
+   <entry key="600011" value="Manali"/>
+   <entry key="600110" value="egmore"/>
+   </map>
+   </property>
+   
+   </bean>
+      </beans>
