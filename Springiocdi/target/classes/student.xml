@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+  <beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    
+    
+    <bean id="student1" class="com.student.Student">
+    <property name="stuid" value="7001"/>
+     <property name="stuname" value="Divya"/>
+     <constructor-arg index="0" ref="college" />
+     <property name="department" ref="depts"/>
+    </bean>  
+     <bean id="depts" class="com.student.Department">
+    <property name="deptname" value="Computer Science"/>
+     <property name="section" value="A"/>
+     </bean>
+       <bean id = "college" class = "com.student.College">
+       <property name="collegename" value="Ethiraj"/>
+       </bean>
+		
+    </beans>
+    
