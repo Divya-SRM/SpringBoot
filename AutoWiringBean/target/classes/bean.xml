@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    
+<bean id="department" class="com.pack.Department">
+<property name="deptname" value="MCA"/>
+</bean>
+<bean id="stud1" class="com.pack.Student" autowire="byName">
+</bean>
+<bean id="stud2" class="com.pack.Student" autowire="byType">
+</bean>
+
+</beans>
