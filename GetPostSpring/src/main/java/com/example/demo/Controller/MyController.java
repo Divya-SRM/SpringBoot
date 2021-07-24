@@ -37,7 +37,7 @@ public class MyController extends BaseController {
 		
 	}
 	@GetMapping(value="/student",produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<List<Student>> getCustomer(@RequestBody Student cust)
+    public ResponseEntity<List<Student>> getCustomer(@RequestBody Student stud)
     {
         return new ResponseEntity<List<Student>>(service.fetchAllStud(),HttpStatus.OK);
     }
