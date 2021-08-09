@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    
+    <bean id = "profile" class = "com.pack.Profile">
+
+        <property name="student" ref="student1"  />
+    </bean>
+
+    <!-- Definition for student1 bean -->
+    <bean id = "student1" class = "com.pack.Student">
+       <property name = "name" value = "Divya" />
+       <property name = "age" value = "23"/>
+    </bean>
+ 
+    <!-- Definition for student2 bean -->
+    <bean id = "student2" class = "com.pack.Student">
+       <property name = "name" value = "Naveen" />
+       <property name = "age" value = "20"/>
+    </bean>
+ 
+</beans>
